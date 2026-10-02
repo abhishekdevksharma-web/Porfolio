@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f4f2f3;
+  background: #09090b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --bg: #09090b;
+  --surface: #101013;
+  --surface-raised: #151518;
+  --text: #f4f2f3;
+  --muted: #a09da5;
+  --subtle: #706d76;
+  --accent: #fa3152;
+  --accent-soft: rgba(250, 49, 82, .12);
+  --border: rgba(255, 255, 255, .09);
+  --mono: 'DM Mono', monospace;
+  --heading: 'Manrope', sans-serif;
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; }
+body, button, input, textarea { font-family: 'DM Sans', sans-serif; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { text-decoration: none; }
+::selection { color: #fff; background: rgba(250, 49, 82, .55); }
+img { display: block; max-width: 100%; }
+
+:focus-visible { outline: 2px solid #ff7388; outline-offset: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
