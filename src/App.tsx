@@ -1,6 +1,6 @@
 import { useEffect, useState, type FormEvent, type ReactNode } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import heroPhoto from './assets/images/profile/developer-hero.png'
+import heroPhoto from './assets/images/profile/developer-hero.webp'
 import { Icon } from './components/ui/Icon'
 import { ProjectsSection } from './components/projects/ProjectsSection'
 import { ProjectDetails } from './pages/ProjectDetails'

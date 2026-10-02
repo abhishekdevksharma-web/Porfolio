@@ -1072,12 +1072,17 @@
 .project-actions {
   align-items: center;
   display: flex;
-  gap: 17px;
+  flex-wrap: wrap;
+  gap: 12px 17px;
   margin-top: 20px;
 }
 .project-link-placeholder {
-  color: #716c76;
-  font-size: 9px;
+  color: #aaa4af;
+  font-size: 10px;
+  transition: color 0.2s;
+}
+.project-link-placeholder:hover {
+  color: #ff7b8e;
 }
 .education {
   background: linear-gradient(

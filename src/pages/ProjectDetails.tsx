@@ -34,11 +34,9 @@ export function ProjectDetails() {
               <p>{project.shortDescription}</p>
               <div className="project-stack">{project.technologies.map((technology) => <span key={technology}>{technology}</span>)}</div>
               <div className="project-actions project-detail-links">
-                {project.github
-                  ? <a className="button button-secondary" href={project.github} target="_blank" rel="noreferrer">GitHub UI ↗</a>
-                  : <span className="project-link-placeholder">GitHub URL not provided</span>}
-                {project.apiGithub && <a className="button button-secondary" href={project.apiGithub} target="_blank" rel="noreferrer">GitHub API ↗</a>}
-                {project.liveDemo && <a className="button button-primary" href={project.liveDemo} target="_blank" rel="noreferrer">Live demo ↗</a>}
+                {project.github && <a className="button button-secondary" href={project.github} target="_blank" rel="noopener noreferrer">GitHub UI ↗</a>}
+                {project.apiGithub && <a className="button button-secondary" href={project.apiGithub} target="_blank" rel="noopener noreferrer">GitHub API ↗</a>}
+                {project.liveDemo && <a className="button button-primary" href={project.liveDemo} target="_blank" rel="noopener noreferrer">Live demo ↗</a>}
               </div>
             </div>
             <div className="project-detail-preview project-visual">

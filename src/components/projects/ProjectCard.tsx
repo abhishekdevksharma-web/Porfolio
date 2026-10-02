@@ -25,11 +25,9 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
           >
             View Details <span aria-hidden="true">↗</span>
           </Link>
-          {project.github
-            ? <a className="project-link-placeholder" href={project.github} target="_blank" rel="noreferrer">GitHub UI ↗</a>
-            : <span className="project-link-placeholder">GitHub link not provided</span>}
-          {project.apiGithub && <a className="project-link-placeholder" href={project.apiGithub} target="_blank" rel="noreferrer">GitHub API ↗</a>}
-          {project.liveDemo && <a className="project-link-placeholder" href={project.liveDemo} target="_blank" rel="noreferrer">Live demo ↗</a>}
+          {project.github && <a className="project-link-placeholder" href={project.github} target="_blank" rel="noopener noreferrer">GitHub UI ↗</a>}
+          {project.apiGithub && <a className="project-link-placeholder" href={project.apiGithub} target="_blank" rel="noopener noreferrer">GitHub API ↗</a>}
+          {project.liveDemo && <a className="project-link-placeholder" href={project.liveDemo} target="_blank" rel="noopener noreferrer">Live demo ↗</a>}
         </div>
       </div>
     </article>

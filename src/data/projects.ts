@@ -122,7 +122,7 @@ export const projects: Project[] = [
     preview: 'movie',
     github: null,
     apiGithub: null,
-    liveDemo: null,
+    liveDemo: 'https://movie-hub-y2q3.onrender.com/',
     type: 'Mobile',
     categories: ['Mobile'],
     purpose:
